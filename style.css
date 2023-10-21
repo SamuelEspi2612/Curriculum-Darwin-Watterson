@@ -1,0 +1,148 @@
+main {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-rows: 50px 400px 250px 150px;
+    grid-template-columns: 200px 400px 600px;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;}
+
+body {
+    background-image: url(content/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+}
+
+div:not(.tituloexplab, .lista, .fotos, .foto1, .foto2, .foto3, .foto4) {
+    background-color: #4b4b4b;
+    border: 1px;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+div:hover:not(.imagen, .tituloexplab, .lista, .fotos) {
+    transform: scale(1.02);
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+img {
+    padding: auto;
+}
+
+audio {
+    margin: 10px;
+}
+
+iframe {
+    border-radius: 15px;
+}
+
+.imagen {
+    text-align: center;
+}
+
+.titulo {
+    grid-row: 1;
+    grid-column: 1 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descripcion {
+    grid-row: 2;
+    grid-column: 1;
+    display: block;
+    font-size: 13px;
+}
+
+.descripcion ul {
+    padding: 0 10%;
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+.descripcion h2 {
+    margin-bottom: 0;
+}
+
+.explaboral {
+    display: grid;
+    grid-row: 2;
+    grid-column: 2 / 4;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 75px 325px;
+}
+
+.tituloexplab {
+    grid-row: 1;
+    grid-column: 1 / 3;
+}
+
+.lista {
+    grid-row: 2;
+    grid-column: 1;
+    font-size: 20px;
+}
+
+.fotos {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px;
+    grid-gap: 5px;
+    margin: 0 auto auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.fotos img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.lista ul{
+    margin-left: 15px;
+}
+
+.lista li{
+    margin: 5px 0;
+}
+
+.video {
+    grid-row: 3 / 5;
+    grid-column: 1 / 3;
+    text-align: center
+}
+
+.audio {
+    grid-row: 3;
+    grid-column: 3 / 4;
+    text-align: center;
+}
+
+.audio h2 {
+    margin-bottom: 15px;
+}
+
+.creditos {
+    display: flex;
+    grid-row: 4;
+    grid-column: 3;
+    text-align: center;
+    justify-content: center;
+}
+
+.creditos h3 {
+    margin: auto;
+}
